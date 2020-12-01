@@ -97,6 +97,9 @@ npm install --save redux-thunk
 ````shell script
 npm install node-sass@4.14.1
 
+npm i bootstrap
+
+
 @import "~bootstrap";
 ````
 
