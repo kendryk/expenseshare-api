@@ -4,11 +4,17 @@ Fonctionnalités
 
 Les fonctionnalités de l’application resteront relativement classiques :
 
-    - [ ] Pouvoir ajouter une personne dans un groupe (Nom + Prénom) sans effectuer de vérification. Il ne sera pas possible de faire de lien entre une personne d’un groupe et celle d’un autre groupe. Il faudra donc recréer chaque personne dans chaque groupe.
+    - [ ] Pouvoir ajouter une personne dans un groupe (Nom + Prénom) 
+          sans effectuer de vérification. Il ne sera pas possible de 
+          faire de lien entre une personne d’un groupe et celle d’un 
+          autre groupe. Il faudra donc recréer chaque personne dans chaque groupe.
     
-    - [ ] Pouvoir ajouter une dépense (chaque dépense à un titre, un montant, une date, une catégorie et est associée à une personne).
+    - [ ] Pouvoir ajouter une dépense (chaque dépense à 
+          un titre, un montant, une date, une catégorie 
+          et est associée à une personne).
     
-    - [ ] Pouvoir trier / filtrer les dépenses par catégorie, personne ou montant.
+    - [ ] Pouvoir trier / filtrer les dépenses par catégorie, 
+          personne ou montant.
     
     - [ ] Pouvoir fermer un groupe (empêcher d’ajouter des dépenses).
     
