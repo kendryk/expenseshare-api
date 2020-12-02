@@ -1,4 +1,5 @@
 import React from 'react';
+import EventExpenseForm from "./EventEspenseForm";
 
 function Event(props) {
 
@@ -6,14 +7,17 @@ function Event(props) {
 
     return (
         <React.Fragment>
-            <div className=' border border-dark w-100 p-4 mb-3'>
-                <div className='d-flex '>
-                    <h3 className=' border border-dark  rounded-lg m-1 px-5 py-3'>Dépense 1</h3>
-                    <h4 className='m-1 px-2 py-3' >titre de la dépense 1</h4>
-                    <hr/>
-                    <h5 className=' m-0 p-2'>price €</h5>
-                </div>
-                <p className='p-2 m-0'> Ajouté le  createdDate par AuthorAjouter </p>
+
+            <div className=' d-flex flex-column px-5'>
+
+                <h1> titre </h1>
+                <span>Identifier :  </span>
+
+                <button className='btn btn-info my-2'> <h3>Ajouter une nouvelle dépense</h3> </button>
+
+                <EventExpenseForm/>
+
+
             </div>
 
 

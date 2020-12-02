@@ -9,10 +9,7 @@ import EventPage from "./components/pages/EventPage";
 import './App.scss';
 
 function App() {
-
   return (
-
-      //TODO Comment MODIFIE LE NOM SUR L'onglet de chaque page?
 
       <React.Fragment>
           <NavBar/>
@@ -22,7 +19,6 @@ function App() {
               <Route path='/CreatePage' component={CreatePage} />
               <Route path='/AboutPage' component={AboutPage} />
               <Route path='/EventPage/:id' component={EventPage} />
-
 
           </Switch>
       </React.Fragment>

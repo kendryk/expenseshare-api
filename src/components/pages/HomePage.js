@@ -1,7 +1,12 @@
 import React from 'react';
 
-function HomePage(props) {
+class HomePage extends React.Component{
 
+    componentDidMount() {
+        document.title = 'Home Page';
+    }
+
+    render() {
     return (
         <React.Fragment>
 
@@ -19,5 +24,5 @@ function HomePage(props) {
 
     );
 }
-
+}
 export default HomePage;

@@ -16,7 +16,7 @@ function fetchEventsPending() {
 
 export const FETCH_EVENTS_SUCCESS = 'FETCH_EVENTS_SUCCESS';
 function fetchEventsSuccess(events) {
-    return { type: FETCH_EVENTS_PENDING, payload: events };
+    return { type: FETCH_EVENTS_SUCCESS, payload: events };
 }
 
 export const FETCH_EVENTS_FAILURE = 'FETCH_EVENTS_FAILURE';

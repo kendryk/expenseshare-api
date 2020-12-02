@@ -17,7 +17,8 @@ const initialState = {
     error:{
         events: null,
     },
-    event: null,
+
+    eventJoin: null,
     joinSlug : "",
 
 };
@@ -29,7 +30,7 @@ function front(state = initialState, action) {
         case FETCH_EVENTS_PENDING:
             return {...state, loading: {...state.loading, events: true}}
         case FETCH_EVENTS_SUCCESS:
-            return {...state, events: action.payload, loading: {...state.loading, events: false}}
+            return {...state, eventJoin: action.payload, loading: {...state.loading, events: false}}
 
         case FETCH_EVENTS_FAILURE:
             return {...state, error: action.payload, loading: {...state.loading, events: false}}

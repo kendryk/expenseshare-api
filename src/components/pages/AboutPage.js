@@ -1,25 +1,32 @@
 import React from 'react';
 
-function AboutPage(props) {
-    return (
-        <React.Fragment>
+class AboutPage extends React.Component {
 
-            <div className="jumbotron jumbotron-fluid bg-info text-white">
-                <div className="container">
-                    <h1 className="display-4"> AboutPage</h1>
-                    <p className="lead">
+
+    componentDidMount() {
+        document.title = 'About Page';
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+
+                <div className="jumbotron jumbotron-fluid bg-info text-white">
+                    <div className="container">
+                        <h1 className="display-4"> AboutPage</h1>
+                        <p className="lead">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aspernatur culpa distinctio,
-                        eius eligendi hic, impedit iste itaque iusto nihil nulla tempora. Adipisci alias amet consequuntur, fugiat necessitatibus temporibus! Eveniet?
+                            eius eligendi hic, impedit iste itaque iusto nihil nulla tempora. Adipisci alias amet consequuntur, fugiat necessitatibus temporibus! Eveniet?
 
-                    </p>
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </React.Fragment>
+        );
+    }
 
 
+    }
 
-        </React.Fragment>
-
-    );
-}
 
 export default AboutPage;

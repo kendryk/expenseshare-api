@@ -2,17 +2,18 @@ import React from 'react';
 import {Redirect} from "react-router-dom";
 
 function JoinEvent(props) {
-//TODO Redirection vers la page EventPage/anniversaire-de-john
 
+    console.log(props);
 
-    const{loading, joinSlug, event} = props;
+    const{loading, joinSlug, eventJoin} = props;
 
     if (loading){
         return <div>chargement en cours...</div>
     }
-    console.log(event);
-    //TODO ??? EVENT non modifié
-    if(event !== null){
+    console.log(eventJoin);
+    console.log(joinSlug);
+
+    if(eventJoin !== null){
         return <Redirect to={'/EventPage/' + joinSlug}/>
     }
 
@@ -21,13 +22,13 @@ function JoinEvent(props) {
         <div className="input-group  mb-3">
 
             <input value= {props.joinSlug} type="text" className="form-control"
-                   onChange={joinSlug => props.joinChangeSlug(joinSlug.target.value)} placeholder='Noter votre évènement'/>
+                   onChange={event => props.joinChangeSlug(event.target.value)} placeholder='Noter votre évènement'/>
 
             <div className="input-group-append">
 
                 <button className="btn btn-outline-secondary" onClick={ ()=> {
-                    //TODO ??? EVENT non modifié par la function ???
-                    props.fetchEvents(event);
+
+                    props.fetchEvents();
 
                 }}>JOIN</button>
             </div>

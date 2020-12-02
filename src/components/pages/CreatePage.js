@@ -1,6 +1,13 @@
 import React from 'react';
 
-function CreatePage(props) {
+class CreatePage extends React.Component {
+
+
+    componentDidMount() {
+        document.title = 'Create Page';
+    }
+
+    render() {
     return (
         <React.Fragment>
 
@@ -26,5 +33,5 @@ function CreatePage(props) {
 
     );
 }
-
+}
 export default CreatePage;

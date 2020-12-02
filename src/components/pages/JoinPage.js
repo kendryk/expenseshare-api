@@ -2,9 +2,12 @@ import React from 'react';
 import JoinEventContainer from "../events/JoinEventContainer";
 
 
-function JoinPage(props) {
+class JoinPage extends React.Component {
 
-
+    componentDidMount() {
+        document.title = 'Join Page';
+    }
+    render() {
     return (
         <React.Fragment>
 
@@ -21,6 +24,7 @@ function JoinPage(props) {
         </React.Fragment>
 
     );
+}
 }
 
 export default JoinPage;
