@@ -1,21 +1,13 @@
 import { connect } from 'react-redux';
 import JoinEvent from "./JoinEvent";
-import {joinChangeSlug,fetchEvents} from "../../actions/action";
+import {joinChangeSlug,fetchEvents} from "../../../actions/action";
 
 
 // Envoyer des données dans les props
 const mapStateToProps = (state, ownProps) => ({
-    joinSlug: state.front.joinSlug.filter(
+    joinSlug: state.front.joinSlug,
 
-        joinSlug => {
-            const {events} = state.front.joinSlug;
-
-            if (joinSlug !== '' && joinSlug !== events.slug) {
-                return false
-            }
-            return true
-        }),
-
+    //Todo si un joinSlug !== slug alors false
 
     eventJoin:state.front.eventJoin,
 })

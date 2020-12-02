@@ -1,5 +1,5 @@
 import React from 'react';
-import EventExpenseForm from "./EventEspenseForm";
+import EventExpenseForm from "./expenses/EventEspenseForm";
 
 function Event(props) {
 

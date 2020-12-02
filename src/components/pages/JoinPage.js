@@ -1,5 +1,5 @@
 import React from 'react';
-import JoinEventContainer from "../events/JoinEventContainer";
+import JoinEventContainer from "../events/joins/JoinEventContainer";
 
 
 class JoinPage extends React.Component {
